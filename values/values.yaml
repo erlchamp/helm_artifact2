@@ -2,15 +2,10 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-name: hugo
+name: hugoblog
 replicaCount: 1
 
 image:
   repository: erlchamp/hugo
   tag: latest
   pullPolicy: Always
-
-
-service:
-  type: LoadBalancer
-  port: 80

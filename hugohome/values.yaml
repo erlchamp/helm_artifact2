@@ -1,0 +1,14 @@
+# Default values for hugo.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+name: hugohome
+replicaCount: 1
+
+image:
+  repository: erlchamp/hugohome
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
